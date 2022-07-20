@@ -17,23 +17,52 @@ img {
 
     /* header section */
 .icon-container {
-    margin: 1em;
     padding: 1em;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #ff00ff;
+/*     border: 1px solid #ff00ff; */
+}
+
+.icon-profile,
+.icon-logo,
+.icon-chat {
+    object-fit: contain;
+}
+
+.icon-profile:hover,
+.icon-chat:hover {
+    transform: scale(1.1);
 }
 
     /* main section */
 main {
-    margin: 1em;
     padding: 1em;
-    border: 1px solid #ff00ff;
+}
+
+.candidate-container {
+    position: relative;
 }
 
 .dog-candidate {
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #404040;
+}
+
+.candidate-name {
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+    color: #f8f8f8;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.candidate-description {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: #b7b7b7;
+    font-size: 1.25rem;
 }
 
 .btn-container {
@@ -50,9 +79,19 @@ main {
     margin: 1em 1em 0 1em;
     width: 5em;
     height: 5em;
-    box-shadow: 0px 0px 15px #E5E4E2;
+    box-shadow: 0px 0px 15px #e5e4e2;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.cross-btn:hover,
+.cross-btn:focus {
+    background: #ffe7ef;
+}
+
+.heart-btn:hover,
+.heart-btn:focus {
+    background: #dbfff4;
 }
 
 .icon-cross,
@@ -62,6 +101,9 @@ main {
 
     /* footer section */
 footer {
-    margin: 1em;
-    border: 1px solid #ff00ff;
+}
+
+footer p{
+    margin: 0;
+    letter-spacing: .1em;
 }

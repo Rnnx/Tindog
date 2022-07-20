@@ -1,5 +1,5 @@
-const dogs = [
-    {
+const dogs = {
+    rex: {
         name: "Rex",
         avatar: "images/dog-rex.jpg",
         age: 25,
@@ -7,7 +7,7 @@ const dogs = [
         hasBeenSwiped: false,
         hasBeenLiked: false
     },
-    {
+    bella: {
         name: "Bella",
         avatar: "images/dog-bella.jpg",
         age: 43,
@@ -15,7 +15,7 @@ const dogs = [
         hasBeenSwiped: false,
         hasBeenLiked: false
     },
-    {
+    teddy: {
         name: "Teddy",
         avatar: "images/dog-teddy.jpg",
         age: 30,
@@ -23,6 +23,6 @@ const dogs = [
         hasBeenSwiped: false,
         hasBeenLiked: false
     }
-]
+}
 
-// Remember to export the data!
+export default dogs
